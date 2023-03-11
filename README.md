@@ -1,7 +1,7 @@
 # Does Your Birthday Make You Better At Sports?
 # The Matthew Effect
 
-Short intro
+Have you ever thought that if you were born in February, you have more probabilities of becoming a professional Hockey player, than if you were born in December? Let's analyze more about this and other sports.
 
 ## Background
 
@@ -14,8 +14,6 @@ One way to evaluate this effect is to look at professional athletes. Malcolm Gla
 Hockey’s cutoff date is December 31st, but baseball’s cutoff date has historically been July 31st. Football’s cutoff is July 31st too, but they also have weight categories as well for older ages. Basketball’s Amateur Athletic Union (AAU) cutoff date is August 31st.
 
 Malcolm Gladwell’s chapter on the Matthew Effect is persuasive as a narrative. He even has a couple of tables. After reading his Matthew Effect chapter, your job is to create a few persuasive visualizations about the birthday distributions within each sport. In addition, you will need to compare the sport birthday distributions to the distribution of birthdays in the US population to verify that the two groups are in fact different.  
-
-You can find varied data sources available for use in the sources folder. You will need to use more than one of the data sets provided, but you are not expected to use them all.
 
 ## Results
 
