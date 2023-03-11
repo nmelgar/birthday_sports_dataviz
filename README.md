@@ -1,4 +1,5 @@
 # Does Your Birthday Make You Better At Sports?
+# The Matthew Effect
 
 Short intro
 
@@ -18,13 +19,51 @@ You can find varied data sources available for use in the sources folder. You wi
 
 ## Results
 
-Results and images go here...
+Group A: baseball players born in June-August.<br>
+Group B: US people born in June-August. <br>
+P-Value is greater than 0.05, so it is a great chance of becoming a baseball player if you were born in any of these months.
 
-![image](https://...)
+![image](https://raw.githubusercontent.com/nmelgar/birthday_sports_dataviz/main/images/baseball-june-auguts.png)
 
 <hr>
 
-Results and images go here...
+Group A: baseball players born in September-November. <br>
+Group B: US people born in September-November. <br>
+P-Value is lower than 0.05, so it is a small chance of becoming a baseball player if you were born in any of these months.
 
-![image](https:/...)
+![image](https://raw.githubusercontent.com/nmelgar/birthday_sports_dataviz/main/images/baseball-september-november.png)
 
+<hr>
+
+Each sport has a cutoff date, this can be an advantage to many aspirants. <br>
+Hockey - December, 31 <br>
+Baseball - July, 31<br>
+Football - July, 31<br>
+Basketball - August, 31<br>
+<br>
+We can use hockey as reference: most of the players were born in the first 3 months of the year and, from
+August there's an interesting decline in the amount of players.
+
+![image](https://raw.githubusercontent.com/nmelgar/birthday_sports_dataviz/main/images/players-sports-month.png)
+
+<hr>
+
+These are the months with the lowest probability of becoming a professional player. <br>
+Using the probability of baseball, 1/10874, only around 6 persons out of each 1957 persons born in June will make it.
+
+![image](https://raw.githubusercontent.com/nmelgar/birthday_sports_dataviz/main/images/1%20Heading%20%2B%201%20Paragraph%20(7).png)
+
+<hr>
+
+These are the months with the highest probability of becoming a professional player. <br>
+Using the probability of baseball, 1/7844, only around 4 persons out of each 1957 persons born in August will make it.
+
+![image](https://raw.githubusercontent.com/nmelgar/birthday_sports_dataviz/main/images/1%20Heading%20%2B%201%20Paragraph%20(8).png)
+
+<hr>
+
+## Conclusion
+
+As mentioned in the previous slides, the month you born can affect your probabilities of becoming a professional player, of course it depends on different factors, but as in baseball, despite of having lower probability of becoming a professional, more people who were born in June make it, compared than those who were born in August, with a higher probability, less people make it.
+<br>
+Matthew effect was also demonstrated for hockey players, there's a higher probability of becoming a professional if you were born in February than if you were born in December, since the cutoff date is December, 31, so the earliest of the year you were born, the earliest you can prepare to play hockey.
