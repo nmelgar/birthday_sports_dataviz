@@ -1,0 +1,2673 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0302.2143                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0302.2143)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='http://localhost:9100/t/nmm/workbooks/births_sports?rev=1.9' id='births_sports' path='/t/nmm/workbooks' revision='2.5' site='nmm' />
+  <preferences />
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='counts_baseball' inline='true' name='federated.1soqjoc0we6zjj19vq9vi1kw28qm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='counts_baseball' name='textscan.0m4x2sq16eyi3v1flyvir0hc89lu'>
+            <connection class='textscan' directory='Data/19rqylg0tsfjt1190inko0jps251' filename='counts_baseball.csv' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0m4x2sq16eyi3v1flyvir0hc89lu' name='counts_baseball.csv' table='[counts_baseball#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='month_number' ordinal='0' />
+            <column datatype='string' name='month_name' ordinal='1' />
+            <column datatype='integer' name='day_of_month' ordinal='2' />
+            <column datatype='integer' name='day_of_year' ordinal='3' />
+            <column datatype='integer' name='births' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0m4x2sq16eyi3v1flyvir0hc89lu' name='counts_baseball.csv' table='[counts_baseball#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='month_number' ordinal='0' />
+            <column datatype='string' name='month_name' ordinal='1' />
+            <column datatype='integer' name='day_of_month' ordinal='2' />
+            <column datatype='integer' name='day_of_year' ordinal='3' />
+            <column datatype='integer' name='births' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[counts_baseball.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month_number]</local-name>
+            <parent-name>[counts_baseball.csv]</parent-name>
+            <remote-alias>month_number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_baseball.csv_93D22B39BE6A4DB19F3A009274C2A3CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month_name]</local-name>
+            <parent-name>[counts_baseball.csv]</parent-name>
+            <remote-alias>month_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_baseball.csv_93D22B39BE6A4DB19F3A009274C2A3CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_of_month]</local-name>
+            <parent-name>[counts_baseball.csv]</parent-name>
+            <remote-alias>day_of_month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_baseball.csv_93D22B39BE6A4DB19F3A009274C2A3CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_of_year]</local-name>
+            <parent-name>[counts_baseball.csv]</parent-name>
+            <remote-alias>day_of_year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_baseball.csv_93D22B39BE6A4DB19F3A009274C2A3CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>births</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[births]</local-name>
+            <parent-name>[counts_baseball.csv]</parent-name>
+            <remote-alias>births</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_baseball.csv_93D22B39BE6A4DB19F3A009274C2A3CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='counts_baseball.csv' datatype='table' name='[__tableau_internal_object_id__].[counts_baseball.csv_93D22B39BE6A4DB19F3A009274C2A3CB]' role='measure' type='quantitative' />
+      <column caption='Births' datatype='integer' name='[births]' role='measure' type='quantitative' />
+      <column caption='Day Of Month' datatype='integer' name='[day_of_month]' role='dimension' type='quantitative' />
+      <column caption='Day Of Year' datatype='integer' name='[day_of_year]' role='dimension' type='quantitative' />
+      <column caption='Month Name' datatype='string' name='[month_name]' role='dimension' type='nominal' />
+      <column caption='Month Number' datatype='integer' name='[month_number]' role='dimension' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='counts_baseball.csv' id='counts_baseball.csv_93D22B39BE6A4DB19F3A009274C2A3CB'>
+            <properties context=''>
+              <relation connection='textscan.0m4x2sq16eyi3v1flyvir0hc89lu' name='counts_baseball.csv' table='[counts_baseball#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='month_number' ordinal='0' />
+                  <column datatype='string' name='month_name' ordinal='1' />
+                  <column datatype='integer' name='day_of_month' ordinal='2' />
+                  <column datatype='integer' name='day_of_year' ordinal='3' />
+                  <column datatype='integer' name='births' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='counts_basketball' inline='true' name='federated.1et6bpz0o3l3771gpguzu1hf2h7z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='counts_basketball' name='textscan.1ng6lcz1as1pvm124ro0t1jap3p8'>
+            <connection class='textscan' directory='Data/0nqvki60io53y910f7mjg0ypfakz' filename='counts_basketball.csv' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ng6lcz1as1pvm124ro0t1jap3p8' name='counts_basketball.csv' table='[counts_basketball#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='month_number' ordinal='0' />
+            <column datatype='string' name='month_name' ordinal='1' />
+            <column datatype='integer' name='day_of_month' ordinal='2' />
+            <column datatype='integer' name='day_of_year' ordinal='3' />
+            <column datatype='integer' name='births' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ng6lcz1as1pvm124ro0t1jap3p8' name='counts_basketball.csv' table='[counts_basketball#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='month_number' ordinal='0' />
+            <column datatype='string' name='month_name' ordinal='1' />
+            <column datatype='integer' name='day_of_month' ordinal='2' />
+            <column datatype='integer' name='day_of_year' ordinal='3' />
+            <column datatype='integer' name='births' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[counts_basketball.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month_number]</local-name>
+            <parent-name>[counts_basketball.csv]</parent-name>
+            <remote-alias>month_number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_basketball.csv_69302AD7AAE84CD595EC79840A8F1B9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month_name]</local-name>
+            <parent-name>[counts_basketball.csv]</parent-name>
+            <remote-alias>month_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_basketball.csv_69302AD7AAE84CD595EC79840A8F1B9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_of_month]</local-name>
+            <parent-name>[counts_basketball.csv]</parent-name>
+            <remote-alias>day_of_month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_basketball.csv_69302AD7AAE84CD595EC79840A8F1B9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_of_year]</local-name>
+            <parent-name>[counts_basketball.csv]</parent-name>
+            <remote-alias>day_of_year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_basketball.csv_69302AD7AAE84CD595EC79840A8F1B9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>births</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[births]</local-name>
+            <parent-name>[counts_basketball.csv]</parent-name>
+            <remote-alias>births</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_basketball.csv_69302AD7AAE84CD595EC79840A8F1B9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='counts_basketball.csv' datatype='table' name='[__tableau_internal_object_id__].[counts_basketball.csv_69302AD7AAE84CD595EC79840A8F1B9B]' role='measure' type='quantitative' />
+      <column caption='Births' datatype='integer' name='[births]' role='measure' type='quantitative' />
+      <column caption='Day Of Month' datatype='integer' name='[day_of_month]' role='dimension' type='quantitative' />
+      <column caption='Day Of Year' datatype='integer' name='[day_of_year]' role='dimension' type='quantitative' />
+      <column caption='Month Name' datatype='string' name='[month_name]' role='dimension' type='nominal' />
+      <column caption='Month Number' datatype='integer' name='[month_number]' role='dimension' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='counts_basketball.csv' id='counts_basketball.csv_69302AD7AAE84CD595EC79840A8F1B9B'>
+            <properties context=''>
+              <relation connection='textscan.1ng6lcz1as1pvm124ro0t1jap3p8' name='counts_basketball.csv' table='[counts_basketball#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='month_number' ordinal='0' />
+                  <column datatype='string' name='month_name' ordinal='1' />
+                  <column datatype='integer' name='day_of_month' ordinal='2' />
+                  <column datatype='integer' name='day_of_year' ordinal='3' />
+                  <column datatype='integer' name='births' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='counts_us' inline='true' name='federated.0d7gal20xbije011fvu1v1gvb082' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='counts_us' name='textscan.0ajs3430i4mrxg11fh0su0lgohw1'>
+            <connection class='textscan' directory='Data/0zf6o300lu1dnd11dsxmv00gv1u0' filename='counts_us.csv' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ajs3430i4mrxg11fh0su0lgohw1' name='counts_us.csv' table='[counts_us#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='month_number' ordinal='0' />
+            <column datatype='string' name='month_name' ordinal='1' />
+            <column datatype='integer' name='day_of_month' ordinal='2' />
+            <column datatype='integer' name='day_of_year' ordinal='3' />
+            <column datatype='integer' name='births' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0ajs3430i4mrxg11fh0su0lgohw1' name='counts_us.csv' table='[counts_us#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='month_number' ordinal='0' />
+            <column datatype='string' name='month_name' ordinal='1' />
+            <column datatype='integer' name='day_of_month' ordinal='2' />
+            <column datatype='integer' name='day_of_year' ordinal='3' />
+            <column datatype='integer' name='births' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[counts_us.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month_number]</local-name>
+            <parent-name>[counts_us.csv]</parent-name>
+            <remote-alias>month_number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_us.csv_EBE21813195944CF83EA6DB7CC51CB0D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month_name]</local-name>
+            <parent-name>[counts_us.csv]</parent-name>
+            <remote-alias>month_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_us.csv_EBE21813195944CF83EA6DB7CC51CB0D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_of_month]</local-name>
+            <parent-name>[counts_us.csv]</parent-name>
+            <remote-alias>day_of_month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_us.csv_EBE21813195944CF83EA6DB7CC51CB0D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_of_year]</local-name>
+            <parent-name>[counts_us.csv]</parent-name>
+            <remote-alias>day_of_year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_us.csv_EBE21813195944CF83EA6DB7CC51CB0D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>births</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[births]</local-name>
+            <parent-name>[counts_us.csv]</parent-name>
+            <remote-alias>births</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_us.csv_EBE21813195944CF83EA6DB7CC51CB0D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='counts_us.csv' datatype='table' name='[__tableau_internal_object_id__].[counts_us.csv_EBE21813195944CF83EA6DB7CC51CB0D]' role='measure' type='quantitative' />
+      <column caption='Births' datatype='integer' name='[births]' role='measure' type='quantitative' />
+      <column caption='Day Of Month' datatype='integer' name='[day_of_month]' role='dimension' type='quantitative' />
+      <column caption='Day Of Year' datatype='integer' name='[day_of_year]' role='dimension' type='quantitative' />
+      <column caption='Month Name' datatype='string' name='[month_name]' role='dimension' type='nominal' />
+      <column caption='Month Number' datatype='integer' name='[month_number]' role='dimension' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='counts_us.csv' id='counts_us.csv_EBE21813195944CF83EA6DB7CC51CB0D'>
+            <properties context=''>
+              <relation connection='textscan.0ajs3430i4mrxg11fh0su0lgohw1' name='counts_us.csv' table='[counts_us#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='month_number' ordinal='0' />
+                  <column datatype='string' name='month_name' ordinal='1' />
+                  <column datatype='integer' name='day_of_month' ordinal='2' />
+                  <column datatype='integer' name='day_of_year' ordinal='3' />
+                  <column datatype='integer' name='births' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='basketball_births (2)' inline='true' name='federated.1f8bed01fcfkmb1g412z30155ohb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='basketball_births' name='textscan.0dq1rel18ddxaj1368i1c0xo4mx0'>
+            <connection class='textscan' directory='Data/1gp9qn608hhh5f14rajte18l3kbc' filename='basketball_births.csv' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0dq1rel18ddxaj1368i1c0xo4mx0' name='basketball_births.csv' table='[basketball_births#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='player' ordinal='0' />
+            <column datatype='date' name='birthday' ordinal='1' />
+            <column datatype='integer' name='year' ordinal='2' />
+            <column datatype='string' name='month' ordinal='3' />
+            <column datatype='integer' name='yrs' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0dq1rel18ddxaj1368i1c0xo4mx0' name='basketball_births.csv' table='[basketball_births#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='player' ordinal='0' />
+            <column datatype='date' name='birthday' ordinal='1' />
+            <column datatype='integer' name='year' ordinal='2' />
+            <column datatype='string' name='month' ordinal='3' />
+            <column datatype='integer' name='yrs' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[basketball_births.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player]</local-name>
+            <parent-name>[basketball_births.csv]</parent-name>
+            <remote-alias>player</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[basketball_births.csv_E01B042DE00C43B0B5486D4C49D66A42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birthday</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[birthday]</local-name>
+            <parent-name>[basketball_births.csv]</parent-name>
+            <remote-alias>birthday</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[basketball_births.csv_E01B042DE00C43B0B5486D4C49D66A42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[basketball_births.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[basketball_births.csv_E01B042DE00C43B0B5486D4C49D66A42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[basketball_births.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[basketball_births.csv_E01B042DE00C43B0B5486D4C49D66A42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yrs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yrs]</local-name>
+            <parent-name>[basketball_births.csv]</parent-name>
+            <remote-alias>yrs</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[basketball_births.csv_E01B042DE00C43B0B5486D4C49D66A42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='basketball_births.csv' datatype='table' name='[__tableau_internal_object_id__].[basketball_births.csv_E01B042DE00C43B0B5486D4C49D66A42]' role='measure' type='quantitative' />
+      <column caption='Birthday' datatype='date' name='[birthday]' role='dimension' type='ordinal' />
+      <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+      <column caption='Player' datatype='string' name='[player]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column caption='Yrs' datatype='integer' name='[yrs]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='basketball_births.csv' id='basketball_births.csv_E01B042DE00C43B0B5486D4C49D66A42'>
+            <properties context=''>
+              <relation connection='textscan.0dq1rel18ddxaj1368i1c0xo4mx0' name='basketball_births.csv' table='[basketball_births#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='player' ordinal='0' />
+                  <column datatype='date' name='birthday' ordinal='1' />
+                  <column datatype='integer' name='year' ordinal='2' />
+                  <column datatype='string' name='month' ordinal='3' />
+                  <column datatype='integer' name='yrs' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='counts_all' inline='true' name='federated.077pazf0rmfo5o1dx3o0l0an9a26' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='counts_all' name='textscan.0l644au0p2uw4e19k5ox81b662h2'>
+            <connection class='textscan' directory='Data/146g05707ohvdc1gnvec20qbh35x' filename='counts_all.csv' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0l644au0p2uw4e19k5ox81b662h2' name='counts_all.csv' table='[counts_all#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='month_number' ordinal='0' />
+            <column datatype='string' name='month_name' ordinal='1' />
+            <column datatype='integer' name='day_of_month' ordinal='2' />
+            <column datatype='integer' name='day_of_year' ordinal='3' />
+            <column datatype='integer' name='births' ordinal='4' />
+            <column datatype='string' name='group' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0l644au0p2uw4e19k5ox81b662h2' name='counts_all.csv' table='[counts_all#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='month_number' ordinal='0' />
+            <column datatype='string' name='month_name' ordinal='1' />
+            <column datatype='integer' name='day_of_month' ordinal='2' />
+            <column datatype='integer' name='day_of_year' ordinal='3' />
+            <column datatype='integer' name='births' ordinal='4' />
+            <column datatype='string' name='group' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[counts_all.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month_number]</local-name>
+            <parent-name>[counts_all.csv]</parent-name>
+            <remote-alias>month_number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_all.csv_3464B627B32045A1976C7BABC4BFAB00]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month_name]</local-name>
+            <parent-name>[counts_all.csv]</parent-name>
+            <remote-alias>month_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_all.csv_3464B627B32045A1976C7BABC4BFAB00]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_of_month]</local-name>
+            <parent-name>[counts_all.csv]</parent-name>
+            <remote-alias>day_of_month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_all.csv_3464B627B32045A1976C7BABC4BFAB00]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_of_year]</local-name>
+            <parent-name>[counts_all.csv]</parent-name>
+            <remote-alias>day_of_year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_all.csv_3464B627B32045A1976C7BABC4BFAB00]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>births</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[births]</local-name>
+            <parent-name>[counts_all.csv]</parent-name>
+            <remote-alias>births</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_all.csv_3464B627B32045A1976C7BABC4BFAB00]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[group]</local-name>
+            <parent-name>[counts_all.csv]</parent-name>
+            <remote-alias>group</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[counts_all.csv_3464B627B32045A1976C7BABC4BFAB00]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='counts_all.csv' datatype='table' name='[__tableau_internal_object_id__].[counts_all.csv_3464B627B32045A1976C7BABC4BFAB00]' role='measure' type='quantitative' />
+      <column caption='Births' datatype='integer' name='[births]' role='measure' type='quantitative' />
+      <column caption='Day Of Month' datatype='integer' name='[day_of_month]' role='dimension' type='quantitative' />
+      <column caption='Day Of Year' datatype='integer' name='[day_of_year]' role='dimension' type='quantitative' />
+      <column caption='Group' datatype='string' name='[group]' role='dimension' type='nominal' />
+      <column caption='Month Name' datatype='string' name='[month_name]' role='dimension' type='nominal' />
+      <column caption='Month Number' datatype='integer' name='[month_number]' role='dimension' type='quantitative' />
+      <column-instance column='[group]' derivation='None' name='[none:group:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:group:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;baseball&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;us&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;hockey&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;football&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;basketball&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='counts_all.csv' id='counts_all.csv_3464B627B32045A1976C7BABC4BFAB00'>
+            <properties context=''>
+              <relation connection='textscan.0l644au0p2uw4e19k5ox81b662h2' name='counts_all.csv' table='[counts_all#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='month_number' ordinal='0' />
+                  <column datatype='string' name='month_name' ordinal='1' />
+                  <column datatype='integer' name='day_of_month' ordinal='2' />
+                  <column datatype='integer' name='day_of_year' ordinal='3' />
+                  <column datatype='integer' name='births' ordinal='4' />
+                  <column datatype='string' name='group' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 10'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Baseball players birth by month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/nmm/workbooks/births_sports/Hoja10?rev=' id='Hoja10' path='/t/nmm/workbooks/births_sports' revision='' site='nmm' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='counts_baseball' name='federated.1soqjoc0we6zjj19vq9vi1kw28qm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1soqjoc0we6zjj19vq9vi1kw28qm'>
+            <column caption='Births' datatype='integer' name='[births]' role='measure' type='quantitative' />
+            <column caption='Month Name' datatype='string' name='[month_name]' role='dimension' type='nominal' />
+            <column-instance column='[month_name]' derivation='None' name='[none:month_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[births]' derivation='Sum' name='[sum:births:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1soqjoc0we6zjj19vq9vi1kw28qm].[sum:births:qk]</rows>
+        <cols>[federated.1soqjoc0we6zjj19vq9vi1kw28qm].[none:month_name:nk]</cols>
+      </table>
+      <simple-id uuid='{B2606EF1-E236-4B29-BC7A-0550C3A39C10}' />
+    </worksheet>
+    <worksheet name='avrg played years by month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average played years by month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/nmm/workbooks/births_sports/Hoja7?rev=' id='Hoja7' path='/t/nmm/workbooks/births_sports' revision='' site='nmm' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='basketball_births (2)' name='federated.1f8bed01fcfkmb1g412z30155ohb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1f8bed01fcfkmb1g412z30155ohb'>
+            <column-instance column='[yrs]' derivation='Avg' name='[avg:yrs:qk]' pivot='key' type='quantitative' />
+            <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='None' name='[none:month:nk]' pivot='key' type='nominal' />
+            <column caption='Yrs' datatype='integer' name='[yrs]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1f8bed01fcfkmb1g412z30155ohb].[avg:yrs:qk]</rows>
+        <cols>[federated.1f8bed01fcfkmb1g412z30155ohb].[none:month:nk]</cols>
+      </table>
+      <simple-id uuid='{356CFCBC-9EAE-47F9-971A-255017E96FB0}' />
+    </worksheet>
+    <worksheet name='basket_all by months'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Players by month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/nmm/workbooks/births_sports/basket_allbymonths?rev=' id='basket_allbymonths' path='/t/nmm/workbooks/births_sports' revision='' site='nmm' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='counts_basketball' name='federated.1et6bpz0o3l3771gpguzu1hf2h7z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1et6bpz0o3l3771gpguzu1hf2h7z'>
+            <column caption='Births' datatype='integer' name='[births]' role='measure' type='quantitative' />
+            <column caption='Month Name' datatype='string' name='[month_name]' role='dimension' type='nominal' />
+            <column-instance column='[month_name]' derivation='None' name='[none:month_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[births]' derivation='Sum' name='[sum:births:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1et6bpz0o3l3771gpguzu1hf2h7z].[sum:births:qk]</rows>
+        <cols>[federated.1et6bpz0o3l3771gpguzu1hf2h7z].[none:month_name:nk]</cols>
+      </table>
+      <simple-id uuid='{AFFD0229-8302-40CF-95D0-E50620C721FB}' />
+    </worksheet>
+    <worksheet name='births_all by month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>US births by month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/nmm/workbooks/births_sports/births_allbymonth?rev=' id='births_allbymonth' path='/t/nmm/workbooks/births_sports' revision='' site='nmm' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='counts_basketball' name='federated.1et6bpz0o3l3771gpguzu1hf2h7z' />
+            <datasource caption='counts_us' name='federated.0d7gal20xbije011fvu1v1gvb082' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0d7gal20xbije011fvu1v1gvb082'>
+            <column caption='Births' datatype='integer' name='[births]' role='measure' type='quantitative' />
+            <column caption='Month Name' datatype='string' name='[month_name]' role='dimension' type='nominal' />
+            <column-instance column='[month_name]' derivation='None' name='[none:month_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[births]' derivation='Sum' name='[sum:births:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0d7gal20xbije011fvu1v1gvb082].[sum:births:qk]</rows>
+        <cols>[federated.0d7gal20xbije011fvu1v1gvb082].[none:month_name:nk]</cols>
+      </table>
+      <simple-id uuid='{5FA3007D-72E6-4E32-B632-53ADBC0B5F35}' />
+    </worksheet>
+    <worksheet name='by sport and month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Players by sport and month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/nmm/workbooks/births_sports/Hoja8?rev=' id='Hoja8' path='/t/nmm/workbooks/births_sports' revision='' site='nmm' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='counts_all' name='federated.077pazf0rmfo5o1dx3o0l0an9a26' />
+          </datasources>
+          <datasource-dependencies datasource='federated.077pazf0rmfo5o1dx3o0l0an9a26'>
+            <column caption='Births' datatype='integer' name='[births]' role='measure' type='quantitative' />
+            <column caption='Group' datatype='string' name='[group]' role='dimension' type='nominal' />
+            <column caption='Month Name' datatype='string' name='[month_name]' role='dimension' type='nominal' />
+            <column-instance column='[group]' derivation='None' name='[none:group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[month_name]' derivation='None' name='[none:month_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[births]' derivation='Sum' name='[sum:births:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:group:nk]' />
+              <groupfilter function='member' level='[none:group:nk]' member='&quot;us&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:month_name:nk]' />
+              <groupfilter function='member' level='[none:month_name:nk]' member='&quot;NA&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</rows>
+        <cols>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</cols>
+      </table>
+      <simple-id uuid='{50CE9EF5-1009-4C9A-9ACA-20F17D6DFB94}' />
+    </worksheet>
+    <worksheet name='by sport and month vs us births'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Players by sport and by month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/nmm/workbooks/births_sports/bysportandmonth2?rev=' id='bysportandmonth2' path='/t/nmm/workbooks/births_sports' revision='' site='nmm' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='counts_all' name='federated.077pazf0rmfo5o1dx3o0l0an9a26' />
+          </datasources>
+          <datasource-dependencies datasource='federated.077pazf0rmfo5o1dx3o0l0an9a26'>
+            <column caption='Births' datatype='integer' name='[births]' role='measure' type='quantitative' />
+            <column caption='Group' datatype='string' name='[group]' role='dimension' type='nominal' />
+            <column caption='Month Name' datatype='string' name='[month_name]' role='dimension' type='nominal' />
+            <column-instance column='[group]' derivation='None' name='[none:group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[month_name]' derivation='None' name='[none:month_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[births]' derivation='Sum' name='[sum:births:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:month_name:nk]' />
+              <groupfilter function='member' level='[none:month_name:nk]' member='&quot;NA&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]' shelf='columns'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]' member-value='&quot;us&quot;' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+            <shelf-sort-v2 dimension-to-sort='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]' shelf='rows'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]' member-value='&quot;January&quot;' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <slices>
+            <column>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]' />
+              <text column='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</rows>
+        <cols>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</cols>
+      </table>
+      <simple-id uuid='{59404175-6445-4130-97CF-3C20EAEBE67C}' />
+    </worksheet>
+    <worksheet name='players month vs us birth'>
+      <repository-location derived-from='http://localhost:9100/t/nmm/workbooks/births_sports/Hoja3?rev=' id='Hoja3' path='/t/nmm/workbooks/births_sports' revision='' site='nmm' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='counts_basketball' name='federated.1et6bpz0o3l3771gpguzu1hf2h7z' />
+            <datasource caption='counts_us' name='federated.0d7gal20xbije011fvu1v1gvb082' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0d7gal20xbije011fvu1v1gvb082'>
+            <column caption='Births' datatype='integer' name='[births]' role='measure' type='quantitative' />
+            <column-instance column='[births]' derivation='Sum' name='[sum:births:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1et6bpz0o3l3771gpguzu1hf2h7z'>
+            <column caption='Births' datatype='integer' name='[births]' role='measure' type='quantitative' />
+            <column caption='Month Name' datatype='string' name='[month_name]' role='dimension' type='nominal' />
+            <column-instance column='[month_name]' derivation='None' name='[none:month_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[births]' derivation='Sum' name='[sum:births:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0d7gal20xbije011fvu1v1gvb082].[sum:births:qk]' included-values='in-range' />
+          <filter class='categorical' column='[federated.1et6bpz0o3l3771gpguzu1hf2h7z].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1et6bpz0o3l3771gpguzu1hf2h7z].[sum:births:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0d7gal20xbije011fvu1v1gvb082].[sum:births:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1et6bpz0o3l3771gpguzu1hf2h7z].[none:month_name:nk]'>
+            <groupfilter function='level-members' level='[none:month_name:nk]' />
+          </filter>
+          <manual-sort column='[federated.1et6bpz0o3l3771gpguzu1hf2h7z].[none:month_name:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;August&quot;</bucket>
+              <bucket>&quot;July&quot;</bucket>
+              <bucket>&quot;September&quot;</bucket>
+              <bucket>&quot;October&quot;</bucket>
+              <bucket>&quot;May&quot;</bucket>
+              <bucket>&quot;December&quot;</bucket>
+              <bucket>&quot;March&quot;</bucket>
+              <bucket>&quot;June&quot;</bucket>
+              <bucket>&quot;January&quot;</bucket>
+              <bucket>&quot;November&quot;</bucket>
+              <bucket>&quot;April&quot;</bucket>
+              <bucket>&quot;February&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1et6bpz0o3l3771gpguzu1hf2h7z].[:Measure Names]</column>
+            <column>[federated.1et6bpz0o3l3771gpguzu1hf2h7z].[none:month_name:nk]</column>
+            <column>[federated.0d7gal20xbije011fvu1v1gvb082].[sum:births:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1et6bpz0o3l3771gpguzu1hf2h7z].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1et6bpz0o3l3771gpguzu1hf2h7z].[none:month_name:nk]</rows>
+        <cols>[federated.1et6bpz0o3l3771gpguzu1hf2h7z].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{B152CB9F-E436-429E-BC8C-169080CABD43}' />
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='worksheet' name='basket_all by months'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160' />
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1et6bpz0o3l3771gpguzu1hf2h7z].[none:month_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{594FEDE6-228C-447E-A5A0-F74635B03DC6}' />
+    </window>
+    <window class='worksheet' name='births_all by month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0d7gal20xbije011fvu1v1gvb082].[none:month_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{47B49462-4F36-409C-BF0A-E8EA5BACA2FA}' />
+    </window>
+    <window class='worksheet' name='players month vs us birth'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checklist' param='[federated.1et6bpz0o3l3771gpguzu1hf2h7z].[none:month_name:nk]' type='filter' values='database' />
+            <card mode='checklist' param='[federated.0d7gal20xbije011fvu1v1gvb082].[sum:births:qk]' type='filter' values='database' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{03A42EBB-9EC9-48B9-9D70-509EAD97A1AF}' />
+    </window>
+    <window class='worksheet' maximized='true' name='avrg played years by month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0247sep1toddqz10lpttd0x15wac].[none:month:nk]</field>
+            <field>[federated.1f8bed01fcfkmb1g412z30155ohb].[none:month:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1251E7EF-2D0F-4943-9E4D-003DC8E99CD9}' />
+    </window>
+    <window class='worksheet' name='by sport and month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+            <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{165EC317-BEDE-4BB5-AF42-8AE73E73F6D7}' />
+    </window>
+    <window class='worksheet' name='by sport and month vs us births'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;basketball&quot;</value>
+                <value>&quot;February&quot;</value>
+                <value>399</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;baseball&quot;</value>
+                <value>&quot;February&quot;</value>
+                <value>686</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;hockey&quot;</value>
+                <value>&quot;February&quot;</value>
+                <value>772</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;football&quot;</value>
+                <value>&quot;February&quot;</value>
+                <value>2269</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;us&quot;</value>
+                <value>&quot;February&quot;</value>
+                <value>6511697</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;basketball&quot;</value>
+                <value>&quot;April&quot;</value>
+                <value>359</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;baseball&quot;</value>
+                <value>&quot;April&quot;</value>
+                <value>727</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;hockey&quot;</value>
+                <value>&quot;April&quot;</value>
+                <value>753</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;football&quot;</value>
+                <value>&quot;April&quot;</value>
+                <value>2141</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;us&quot;</value>
+                <value>&quot;April&quot;</value>
+                <value>6850733</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;basketball&quot;</value>
+                <value>&quot;November&quot;</value>
+                <value>379</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;baseball&quot;</value>
+                <value>&quot;November&quot;</value>
+                <value>757</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;hockey&quot;</value>
+                <value>&quot;November&quot;</value>
+                <value>522</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;football&quot;</value>
+                <value>&quot;November&quot;</value>
+                <value>2269</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;us&quot;</value>
+                <value>&quot;November&quot;</value>
+                <value>6884173</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;basketball&quot;</value>
+                <value>&quot;January&quot;</value>
+                <value>401</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;baseball&quot;</value>
+                <value>&quot;January&quot;</value>
+                <value>767</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;hockey&quot;</value>
+                <value>&quot;January&quot;</value>
+                <value>823</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;football&quot;</value>
+                <value>&quot;January&quot;</value>
+                <value>2502</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;us&quot;</value>
+                <value>&quot;January&quot;</value>
+                <value>6979322</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;basketball&quot;</value>
+                <value>&quot;June&quot;</value>
+                <value>392</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;baseball&quot;</value>
+                <value>&quot;June&quot;</value>
+                <value>655</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;hockey&quot;</value>
+                <value>&quot;June&quot;</value>
+                <value>646</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;football&quot;</value>
+                <value>&quot;June&quot;</value>
+                <value>2100</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;us&quot;</value>
+                <value>&quot;June&quot;</value>
+                <value>7122586</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;basketball&quot;</value>
+                <value>&quot;March&quot;</value>
+                <value>426</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;baseball&quot;</value>
+                <value>&quot;March&quot;</value>
+                <value>729</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;hockey&quot;</value>
+                <value>&quot;March&quot;</value>
+                <value>785</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;football&quot;</value>
+                <value>&quot;March&quot;</value>
+                <value>2408</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;us&quot;</value>
+                <value>&quot;March&quot;</value>
+                <value>7147368</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;basketball&quot;</value>
+                <value>&quot;December&quot;</value>
+                <value>369</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;baseball&quot;</value>
+                <value>&quot;December&quot;</value>
+                <value>755</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;hockey&quot;</value>
+                <value>&quot;December&quot;</value>
+                <value>528</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;football&quot;</value>
+                <value>&quot;December&quot;</value>
+                <value>2378</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;us&quot;</value>
+                <value>&quot;December&quot;</value>
+                <value>7155101</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;basketball&quot;</value>
+                <value>&quot;May&quot;</value>
+                <value>389</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;baseball&quot;</value>
+                <value>&quot;May&quot;</value>
+                <value>706</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;hockey&quot;</value>
+                <value>&quot;May&quot;</value>
+                <value>734</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;football&quot;</value>
+                <value>&quot;May&quot;</value>
+                <value>2171</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;us&quot;</value>
+                <value>&quot;May&quot;</value>
+                <value>7175367</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;basketball&quot;</value>
+                <value>&quot;October&quot;</value>
+                <value>413</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;baseball&quot;</value>
+                <value>&quot;October&quot;</value>
+                <value>864</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;hockey&quot;</value>
+                <value>&quot;October&quot;</value>
+                <value>588</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;football&quot;</value>
+                <value>&quot;October&quot;</value>
+                <value>2310</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;us&quot;</value>
+                <value>&quot;October&quot;</value>
+                <value>7293822</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;basketball&quot;</value>
+                <value>&quot;September&quot;</value>
+                <value>418</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;baseball&quot;</value>
+                <value>&quot;September&quot;</value>
+                <value>871</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;hockey&quot;</value>
+                <value>&quot;September&quot;</value>
+                <value>604</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;football&quot;</value>
+                <value>&quot;September&quot;</value>
+                <value>2406</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;us&quot;</value>
+                <value>&quot;September&quot;</value>
+                <value>7440659</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;basketball&quot;</value>
+                <value>&quot;July&quot;</value>
+                <value>442</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;baseball&quot;</value>
+                <value>&quot;July&quot;</value>
+                <value>719</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;hockey&quot;</value>
+                <value>&quot;July&quot;</value>
+                <value>658</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;football&quot;</value>
+                <value>&quot;July&quot;</value>
+                <value>2295</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;us&quot;</value>
+                <value>&quot;July&quot;</value>
+                <value>7527284</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;basketball&quot;</value>
+                <value>&quot;August&quot;</value>
+                <value>396</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;baseball&quot;</value>
+                <value>&quot;August&quot;</value>
+                <value>972</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;hockey&quot;</value>
+                <value>&quot;August&quot;</value>
+                <value>570</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;football&quot;</value>
+                <value>&quot;August&quot;</value>
+                <value>2312</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+                  <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[sum:births:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;us&quot;</value>
+                <value>&quot;August&quot;</value>
+                <value>7624626</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:group:nk]</field>
+            <field>[federated.077pazf0rmfo5o1dx3o0l0an9a26].[none:month_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{340EC465-69C3-4BF2-AE96-56A51B64471A}' />
+    </window>
+    <window class='worksheet' name='Hoja 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1soqjoc0we6zjj19vq9vi1kw28qm].[none:month_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B10150B8-3EA2-4849-8661-B258852B31B0}' />
+    </window>
+  </windows>
+</workbook>
